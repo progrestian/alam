@@ -1,0 +1,50 @@
+@use 'reset'
+
+html
+    background: #111
+    color: #aaa
+
+body,
+#root
+    width: 100vw
+    height: 100vh
+
+#root
+    display: flex
+    justify-content: space-evenly
+
+    > div
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+#control
+    > button
+        background: #333
+        color: #ccc
+        padding: 0.5rem
+
+    > button:hover
+        background: #777
+
+    .button-active
+        background: #ccc
+        color: #333
+
+#canvas
+    background: #000
+
+#hud
+    > .panel
+        margin-bottom: 1rem
+
+        > .field
+            display: grid
+            grid-template-columns: 5rem auto
+
+            > p
+                text-align: left
+
+            > .label
+                font-weight: bold
+                color: #fff
